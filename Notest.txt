@@ -1,0 +1,12 @@
+Maven project
+
+2 folders
+main - main is used to write the main code of application
+test - test is used to write the code for testing the application
+
+inside test folder
+java - our java code which we write to test our application
+resources - we keep properties, test data etc
+config - we store configuration file
+utils  - we keep utilities classes we need in the project
+
