@@ -8,15 +8,15 @@ import utils.CommonMethods;
 public class LoginPage extends CommonMethods{
 
     @FindBy(id = "txtUsername")
-    WebElement usernamebox;
+    public WebElement usernamebox;
 
     @FindBy(id = "txtPassword")
-    WebElement passwordbox;
+    public WebElement passwordbox;
 
     @FindBy(id = "btnLogin")
-    WebElement loginBtn;
+    public WebElement loginBtn;
 
-    LoginPage(){
+    public LoginPage(){
         PageFactory.initElements(driver, this);
     }
 

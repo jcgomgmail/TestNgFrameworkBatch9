@@ -1,6 +1,7 @@
 package utils;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,7 +18,7 @@ public class CommonMethods {
 
     public static WebDriver driver;
 
-    //@BeforeMethod(alwaysRun = true)
+   @BeforeMethod(alwaysRun = true)
     public static void setUp(){
         ConfigReader.readProperties(Constants.CONFIGURATION_FILEPATH);
         switch (ConfigReader.getPropertyValue("browser")){
@@ -50,13 +51,25 @@ public class CommonMethods {
         return wait;
     }
 
-    public void waitForClickability(WebElement element){
+    public static void waitForClickability(WebElement element){
         getWait().until(ExpectedConditions.elementToBeClickable(element));
     }
 
+    public static void click(WebElement element){
+        waitForClickability(element);
+        element.click();
+    }
 
+    public static JavascriptExecutor getJSExecutor(){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        return js;
+    }
 
-   // @AfterMethod(alwaysRun = true)
+    public static void jsClick(WebElement element){
+       getJSExecutor().executeScript("arguments[0].click()", element);
+    }
+
+  @AfterMethod(alwaysRun = true)
     public static void tearDown(){
         if(driver!=null){
             driver.quit();
@@ -64,4 +77,5 @@ public class CommonMethods {
     }
 
 }
+
 
