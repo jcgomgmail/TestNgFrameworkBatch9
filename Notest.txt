@@ -10,3 +10,43 @@ resources - we keep properties, test data etc
 config - we store configuration file
 utils  - we keep utilities classes we need in the project
 
+
+
+framework - it allows you write, reuse and maintain your code with minimal efforts
+
+Maven - it is a build tool
+
+pom.xml
+
+POM - page object model
+
+User story -  Admin should be able to login to hrms application with valid credentials
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
