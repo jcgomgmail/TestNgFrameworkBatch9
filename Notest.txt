@@ -22,6 +22,17 @@ POM - page object model
 
 User story -  Admin should be able to login to hrms application with valid credentials
 
+Recap -
+
+webdrivermanager - manages all the browsers for execution
+constants class -
+page factory -
+
+US - 12345 Admin user should be able to add employee to the hrms application
+
+US - 22345
+
+
 
 
 
