@@ -37,6 +37,32 @@ US - 22345 - System should display an error when invalid login is done
 
 
 
+to read excel file from java -
+
+workbook to use for different versions
+.xlsx - XSSF
+.xls - XSSH
+
+how to get the data from excel file
+file input stream(filepath)
+Object of workbook
+get sheet(name or index)
+get no. of rows get
+get number of cell
+
+create 2 nested for loop
+
+outer loop - control rows
+inner loop - control cols
+
+getrow(index).getcell(index).toString();
+
+
+
+
+
+
+
 
 
 

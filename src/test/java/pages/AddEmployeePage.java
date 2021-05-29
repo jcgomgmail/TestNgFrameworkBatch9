@@ -19,11 +19,24 @@ public class AddEmployeePage extends CommonMethods {
     @FindBy(id="employeeId")
     public WebElement employeeId;
 
+    @FindBy(id="photofile")
+    public WebElement photograph;
+
     @FindBy(id="btnSave")
     public WebElement saveBtn;
 
     @FindBy(id="chkLogin")
     public WebElement createLoginCheckBox;
+
+    @FindBy(id="user_name")
+    public WebElement usernamecreate;
+
+    @FindBy(id="user_password")
+    public WebElement userpassword;
+
+    @FindBy(id="re_password")
+    public WebElement repassword;
+
 
 
     public AddEmployeePage(){
