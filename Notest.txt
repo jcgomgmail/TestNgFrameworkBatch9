@@ -30,7 +30,10 @@ page factory -
 
 US - 12345 Admin user should be able to add employee to the hrms application
 
-US - 22345
+US - 22345 - System should display an error when invalid login is done
+1. when user enters valid/invalid username and invalid/valid password then display "Invalid credentials"
+2. when user lives password field empty then display "Password cannot be empty"
+3. when user lives username field empty then display "username cannot be empty"
 
 
 

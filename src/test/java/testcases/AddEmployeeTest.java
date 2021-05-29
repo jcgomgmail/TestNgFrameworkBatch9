@@ -9,7 +9,7 @@ import utils.ConfigReader;
 
 public class AddEmployeeTest extends CommonMethods {
 
-    @Test
+    @Test(groups = "smoke")
     public void addEmployee(){
 
         LoginPage loginpage = new LoginPage();
