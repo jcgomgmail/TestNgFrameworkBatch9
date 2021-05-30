@@ -36,7 +36,7 @@ public class AddEmployeeTest extends CommonMethods {
         click(add.saveBtn);
     }
 
-    @Test
+    @Test(groups = "regression")
     public void addMultipleEmployees() throws InterruptedException{
         //login operation
         LoginPage loginPage =  new LoginPage();
@@ -77,7 +77,7 @@ public class AddEmployeeTest extends CommonMethods {
             click(dash.employeeListOption);
 
             //enter employee id
-            waitForClickability(emplist.idEmployee);
+            //waitForClickability(emplist.idEmployee);
             sendText(emplist.idEmployee, employeeIDValue);
             click(emplist.searchButton);
 
@@ -92,7 +92,5 @@ public class AddEmployeeTest extends CommonMethods {
             }
         }
         softAssert.assertAll();
-
-
     }
 }

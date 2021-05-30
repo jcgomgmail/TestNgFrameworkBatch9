@@ -26,7 +26,7 @@ public class LoginTest extends CommonMethods {
         Assert.assertTrue(dashboard.welcomemessage.isDisplayed(), "welcome message is not displayed");
     }
 
-    @Test(dataProvider = "invalidData", groups = "regression")
+    @Test(dataProvider = "invalidData", groups = "sanity")
     public void invalidLoginErrorMessageValidation(String username, String password, String message){
         LoginPage loginPage = new LoginPage();
         sendText(loginPage.usernamebox, username);
